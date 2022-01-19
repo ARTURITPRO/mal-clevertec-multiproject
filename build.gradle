@@ -1,0 +1,23 @@
+buildscript {
+    repositories {
+        mavenLocal()
+    }
+    dependencies {
+        classpath 'ru.clevertec.pluginFileImage:ru.clevertec.pluginFileImage.gradle.plugin:1.0'
+    }
+}
+plugins {
+    id 'java'
+}
+apply plugin: 'ru.clevertec.pluginFileImage'
+
+group 'ru.clevertec'
+
+version '1.0'
+
+subprojects {
+    repositories {
+        mavenCentral()
+        mavenLocal()
+    }
+}
